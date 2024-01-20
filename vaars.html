@@ -7,12 +7,35 @@
 </head>
 <body>
     <h1>variables</h1>
-    <script>
-        let name1 = 3;
-        console.log(name1);
+    <button onclick="
+    console.log(`Cart Quantity: ${cart_quantity}`)
+    
+    ">Show quantity</button>
+    <button  onclick="
+    cart_quantity = cart_quantity + 1;
+    console.log(`Cart Quantity: ${cart_quantity}`)
+    
+    ">Add to cart</button>
+    <button onclick="
+    cart_quantity = cart_quantity + 2;
+    console.log(`Cart Quantity: ${cart_quantity}`)
+    
+    ">+2</button>
 
-        let f_name = 'omoisi';
-        console.log(f_name);
+    <button onclick="
+    cart_quantity = cart_quantity + 3;
+    console.log(`Cart Quantity: ${cart_quantity}`)
+    
+    ">+3</button>
+    <button onclick="
+    cart_quantity = cart_quantity - cart_quantity;
+    console.log(`Cart Quantity: ${cart_quantity}`)
+    
+    ">Reset Cart</button>
+
+    <script>
+        let cart_quantity = 0;
+
     </script>
 </body>
 </html> 
